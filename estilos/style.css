@@ -41,3 +41,19 @@ iframe#tela {
     width: 268px;
     height: 472px;
 }
+section#redes-sociais {
+    text-align: right;
+}
+section#redes-sociais > a > img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%; /* USAR 50% PARA DEIXAR IMAGEM QUADRADA RENDONDA*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
+    box-sizing: border-box; /* PARA O BOTAO NÃO SE MEXER QUANDO ATIVAR A BORDA COM O HOVER*/
+}
+section#redes-sociais img:hover {
+    border: 3px solid rgba(255, 255, 255, 0.637);
+    transform: translate(-3px, -3px); /*para fazer "movimento" no botão */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.596);
+    transition: transform 0.3s, border 1s; /*tempo para fazer o movimento do botão*/
+}
